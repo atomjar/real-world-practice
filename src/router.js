@@ -1,7 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
-import About from "./views/About.vue";
+import Serve from "./views/Serve.vue";
+import Create from "./views/Create.vue";
+import Events from "./views/Events.vue";
+import Profile from "./views/Profile.vue";
 
 Vue.use(Router);
 
@@ -9,13 +11,23 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home
+      name: "serve",
+      component: Serve
     },
     {
-      path: "/about",
-      name: "about",
-      component: About
+      path: "/create",
+      name: "create",
+      component: Create
+    },
+    {
+      path: "/events",
+      name: "events",
+      component: Events
+    },
+    {
+      path: "/profile",
+      name: "profile",
+      component: Profile
     }
   ]
 });
